@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="mediaqueries.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav id="desktop-nav">
+      <div class="logo">Michael Gonzalez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER ICON -->
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Gonzalez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Michael Gonzalez profile picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Michael Gonzalez</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Resume PDF
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            ,
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/michael-gonzalez-code/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            ,
+            class="icon"
+            onclick="location.href='https://github.com/flakelolz'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <p class="title">About Me</p>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ Year <br />Junior Software Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>College Dropout<br />Self Taught</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I started actually learning software development in August of 2022
+              with the <b>Web Development Bootcamp</b> by <b>Colt Steele</b> and
+              but truly fell in love with programming when I started learning
+              <b>Rust</b> in March of 2023. I now have a pretty good
+              understanding of <b>Backend development</b> and some lower level
+              concepts that I was forced to understand while learning
+              <b>Rust</b>. I am currently looking for an entry level
+              <b>Backend Developer</b> position. I've also done a lot of
+              <b>Game Development</b> projects because I can't think of an App
+              or library that's useful for people.
+            </p>
+            <br />
+            <p>
+              I've been learning by myself for the past year, figuring out how
+              sutff works from as low level as posible, or at least, as low as
+              I'm capable of.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- WEB DEVELOPMENT -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.postgresql.org/'">
+                    PostgreSQL
+                  </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.mongodb.com/'">
+                    MongoDB
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3
+                    onclick="location.href='https://github.com/tokio-rs/axum'"
+                  >
+                    Axum
+                  </h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://nodejs.org/'">NodeJS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://expressjs.com/'">
+                    ExpressJS
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3
+                    onclick="location.href='https://dotnet.microsoft.com/en-us'"
+                  >
+                    .NET
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3
+                    onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/HTML'"
+                  >
+                    HTML & CSS
+                  </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://react.dev/'">React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- GAME DEVELOPMENT -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Game Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://bevyengine.org/'">
+                    Bevy Engine
+                  </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.raylib.com/'">
+                    Raylib
+                  </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://godotengine.org/'">
+                    Godot Engine
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://unity.com/'">
+                    Unity Engine
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.unrealengine.com/'">
+                    Unreal Engine
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- LANGUAGES -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.rust-lang.org'">
+                    Rust
+                  </h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.golang.org'">Go</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3
+                    onclick="location.href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'"
+                  >
+                    Javascript
+                  </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.typescriptlang.org/'">
+                    TypeScript
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3 onclick="location.href='https://www.python.org'">
+                    Python
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3
+                    onclick="location.href='https://dotnet.microsoft.com/en-us/languages/csharp'"
+                  >
+                    C#
+                  </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/management-app.png"
+                alt="Management app"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Management App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/flakelolz/management-app'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/flappy-bird.png"
+                alt="Flappy Bird"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Flappy Bird Clone
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/flakelolz/bevy-flappy-bird'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/simon-game.png"
+                alt="Simon says mini-game"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Simon Says</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/flakelolz/Simon-Minigame'"
+              >
+                GitHub
+              </button>
+
+              <!-- TODO: -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://flakelolz.github.io/Simon-Minigame/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:michaelgonzalez.code@gmail.com"
+              >michaelgonzalez.code@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/michael-gonzalez-code/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Michael Gonzalez. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
