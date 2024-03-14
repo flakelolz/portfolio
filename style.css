@@ -354,6 +354,10 @@ article h3 {
   cursor: pointer;
 }
 
+article a:hover {
+  text-decoration: none;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
