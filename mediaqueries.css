@@ -39,7 +39,7 @@
   }
   .section__pic-container {
     width: 275px;
-    height: 275px;
+    height: 400px;
     margin: 0 auto 2rem;
   }
   .about-containers {
@@ -99,5 +99,21 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  .project-img {
+    height: 280px;
+    width: 280px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .project-img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .contact-info-upper-container a {
+    font-size: 0.75rem;
   }
 }
