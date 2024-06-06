@@ -370,8 +370,8 @@ article a:hover {
 
 .project-img {
   border-radius: 2rem;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
 }
 
@@ -383,6 +383,22 @@ article a:hover {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+
+}
+
+/* CATEGORIES */
+.category-projects {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 150px 150px 150px;
 }
 
 /* CONTACT SECTION */

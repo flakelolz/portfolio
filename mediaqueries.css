@@ -45,6 +45,10 @@
   .about-containers {
     margin-top: 0;
   }
+  .categories {
+    gap: 5rem;
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -104,6 +108,10 @@
     height: 280px;
     width: 280px;
   }
+  .categories {
+    gap: 2rem;
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (max-width: 300px) {
@@ -116,5 +124,9 @@
   }
   .contact-info-upper-container a {
     font-size: 0.75rem;
+  }
+  .categories {
+    gap: 1rem;
+    font-size: 1rem;
   }
 }
